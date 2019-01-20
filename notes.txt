@@ -16,6 +16,9 @@ html tag: in it we have to always end with finall tag.
 <noscript>No JS available</noscript>
 is used to represent that there is not JS available.
 ---------------------------------------------------------------------------------------
+while is used to test the conditions and execute the condition as long as the condition is true
+do... while : is used to execute the code at least once, then the condition is checked after the 
+code runs first time.
 
 
 

@@ -356,3 +356,116 @@ switch(true) {
 }
 
 console.log(discount);
+
+
+
+
+
+
+
+
+var lineItemCount = 3;
+var currentItem = 0;
+while (currentItem < lineItemCount) {
+    console.log("item: " + currentItem);
+    currentItem++;
+}
+
+// both gives the same output
+var lineItemCount = 3;
+var currentItem = 0;
+while (currentItem < lineItemCount) {
+    console.log("item: " + currentItem++);
+}
+
+
+// move endless by giving 0 as value
+var lineItemCount = 3;
+var currentItem = 0;
+while (currentItem < lineItemCount) {
+    console.log("item: " + currentItem);
+}
+
+
+// in do while we execute the code and then checks the conditions
+var lineItemCount = 3;
+ var currentItem = 0;
+do {
+    console.log("item : " + currentItem);
+    currentItem ++;
+} while (currentItem < lineItemCount);
+
+// ------------------
+var lineItemCount  = 3;
+for (var i = 0; i < lineItemCount; i++)
+ console.log(i);
+// -------------------
+ var lineItemCount = 3;
+ var i = 0;
+
+ for (; i< lineItemCount; i++)
+ console.log(i);
+
+//  --------------
+var lineItemCount = 3;
+var i = 0;
+
+for  (; i < lineItemCount;)
+console.log(i++);
+
+// -----------------------------------------
+
+var lineItemCount = 5;
+for ( var i = 0; i < lineItemCount; i++) {
+    console.log(i);
+    if (i == 1);
+    break;
+}
+// ------------------------------------
+var lineItemCount = 5;
+for (var i = 0; i < lineItemCount; i++) {
+    if (i == 1)
+        continue;
+        console.log(i);
+}
+
+
+// ------------------------------------
+var lineItemCount = 5;
+outerLoop:
+for (var i = 0; i < lineItemCount; i++) {
+    for (var j = 0; j < 3; j++) {
+        if (j == 1)
+            continue outerLoop;
+    }
+    console.log(i);
+}
+
+// ------------------------------------------
+var lineItem = {
+    product: 'Weight 1',
+    quantity: 4,
+    price: 6.20
+};
+
+for (var field in lineItem)
+console.log(field);
+
+
+// ----------------------------------------------
+var lineItem = {
+    product: 'Weight 1',
+    quantity: 4,
+    price: 6.20
+};
+
+for (var field in lineItem)
+console.log(field + " : " + lineItem[field]);
+
+// -----------------------------------------------
+var orderId = 94613;
+console.log(OrderId);
+
+// -------------------------------
+
+
