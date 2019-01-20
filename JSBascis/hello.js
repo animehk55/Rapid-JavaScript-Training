@@ -1,6 +1,3 @@
-// console.log('console in helo.js')
-
-
 var a = 5.1 + 5.3
 console.log(a);
 
@@ -110,3 +107,85 @@ animesh();
 
 
 // Passing an argument in function 
+function animesh(orderId) {
+    console.log("Printing an argument : ", orderId );
+}
+animesh(94613);
+
+
+
+// function not creating but we are calling it with argument 
+// it works in two phases : 1st creating the varibale and 2ndly executing it 
+animesCall(94619461);
+function animesCall(id){
+    console.log("called function earlier : " + 9463 );
+}
+
+
+// passing two arguments 
+function lorry(price, load) {
+    console.log("Average Profit : " + price * load + " tons ");
+}
+lorry( 2, 4.00);
+
+
+
+
+// undefined if any argument is not defined and we call that function 
+function ubonk(price, money, anount) {
+    console.log(anount);
+}
+ubonk(1,45);
+
+
+
+//  prints its value
+function ubonk(price, money, anount) {
+    console.log(price);
+}
+ubonk(1,45);
+
+
+
+function calculatePrice(price, amount) {
+    return price * amount;
+};
+var totalPrice = calculatePrice(5, 8);
+    console.log(totalPrice);
+
+
+
+ // if Function does not return a value then it is undefined 
+ function getOrder() {
+     // nothing returned 
+ };
+
+ var order = getOrder();
+     console.log(order)
+
+
+
+
+
+// functions assigned to varibles is a variable : called as function expression
+var activateOrder = function () {
+    console.log('order activated');
+};
+console.log(typeof activateOrder)
+
+
+
+// function expression execution 
+var activateOrder = function () {
+    console.log('order  activated');
+};
+activateOrder();
+
+
+
+// should show nothing ; but showing whole function with shortcut
+var activateOrder = function () {
+    console.log('order  activated');
+};
+activateOrder;
+
