@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    // console.log('hello in head tag')
+    </script>
+</head>
+<body>
+
+        <!-- <script src="app.js">
+                //  console.log('hello in body') // preferred place for body script tag
+         </script>
+     -->
+
+     <!-- <script type="text/javascript" src="app.js">
+             console.log('ignored') // will not be soon in console, ignored
+     </script> -->
+
+     <script type="text/javascript" defer src="app.js"></script>      
+     <!-- //  "defer" will be written to execute the files afterwards -->
+      
+     <script type="text/javascript" src="hello.js"></script>
+
+</body>
+</html>
